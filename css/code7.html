@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 300px;
+            height: 300px;
+            background-image: url('../img/view-3d-practicing-lawyer.jpg');
+            background-size: cover;
+            position: relative;
+            overflow: hidden;
+        }
+
+        p {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.523);
+            backdrop-filter: blur(10px);
+            color: white;
+            position: absolute;
+            /* left: 100%; */
+            opacity: 0;
+            transition: all .5s linear;
+            /* width: 100%; */
+
+        }
+
+        .box:hover p {
+            /* left: 0; */
+            opacity: 10%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium maiores deserunt fugiat dolorum tenetur
+            nisi fuga magni quia ex exercitationem cum enim consequuntur, quas placeat sunt quam iste totam suscipit!
+
+    </div>
+</body>
+
+</html>
