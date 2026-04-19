@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+
+        }
+
+        .card {
+            width: 400px;
+            height: 300px;
+            background: url('../img//valery-sysoev-LDAirERNzew-unsplash.jpg');
+            background-size: cover;
+            position: relative;
+
+        }
+
+        .img1 {
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            top: -30%;
+            left: 5%;
+            opacity: 0;
+            transition: all .3s linear;
+        }
+
+        .card:hover .img1 {
+            opacity: 1;
+            backdrop-filter: blur(5px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <img class="img1" src="../img/bg7.png" alt="">
+    </div>
+</body>
+
+</html>
