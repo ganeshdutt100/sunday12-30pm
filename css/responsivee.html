@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: rgb(34, 33, 48);
+            color: white;
+            align-items: center;
+
+            border-radius: 40px;
+            font-size: 20px;
+            font-family: sans-serif;
+            padding: 20px;
+        }
+
+        ul {
+            display: none;
+            gap: 20px;
+            list-style: none;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+
+        }
+
+        .bar {
+            rotate: 90deg;
+        }
+
+        .heroSection h1 {
+            text-align: center;
+            background-color: lightblue;
+        }
+
+        @media only screen and (min-width:600px) {
+            ul {
+                display: flex;
+            }
+
+            .heroSection h1 {
+                text-align: start;
+                background-color: lightcoral;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">L<span>O</span>go</div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact-us</a></li>
+            <li><a href="#">Project</a></li>
+            <li><a href="#">Services</a></li>
+        </ul>
+        <div class="bar">
+            ⏸️
+        </div>
+    </nav>
+
+    <div class="heroSection">
+        <h1>Lorem ipsum dolor sit amet.</h1>
+    </div>
+
+</body>
+
+</html>
